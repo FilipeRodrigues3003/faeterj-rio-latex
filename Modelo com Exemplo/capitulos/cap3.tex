@@ -1,0 +1,86 @@
+\chapter{O Terceiro Capitulo}
+ 
+
+\section{Citações longas}
+
+\begin{flushright}
+\begin{minipage}{0.75\textwidth} % 75% de 160; margem para citações longas
+\begin{quotation}
+``O importante é não parar de questionar. A curiosidade tem sua própria razão
+para existir. Uma pessoa não pode deixar de se sentir reverente ao contemplar
+os mistérios da eternidade, da vida, da maravilhosa estrutura da realidade. Basta
+que a pessoa tente apenas compreender um pouco mais desse mistério a cada dia.
+Nunca perca uma sagrada curiosidade". - Albert Einstein
+\end{quotation}
+\end{minipage}
+\end{flushright}
+
+\section{Tabelas}
+
+\begin{table}[h]
+	\centering
+		\begin{tabular}{|c|c|c|}
+		  \hline
+			A & B & A + B \\ \hline
+			0 & 0 & 0 \\ \hline
+			0 & 1 & 1 \\ \hline
+			1 & 0 & 1 \\ \hline
+			1 & 1 & 1 \\ \hline
+		\end{tabular}
+		\caption{Tabela verdade para porta OR.}
+\end{table}
+
+\begin{table}[h]
+	\centering
+		\begin{tabular}{|c|c|c|}
+		  \hline
+			A & B & $\overline{A + B}$ \\ \hline
+			0 & 0 & 1 \\ \hline
+			0 & 1 & 0 \\ \hline
+			1 & 0 & 0 \\ \hline
+			1 & 1 & 0 \\ \hline
+		\end{tabular}
+		\caption{Tabela verdade para porta NOR.}
+\end{table}
+
+É possível criar uma tabela com multicolunas onde uma célula pode ser construída 
+com o agrupamento de células vizinhas em uma linha:
+
+\begin{table}[h]
+	\centering
+	\begin{tabular}{|c|cc|} \hline
+		1a linha 1a coluna & \multicolumn{2}{|c|}{2a e 3a colunas mescladas nesta linha}\\ \hline
+		2a linha 1a coluna & 2a linha 2a coluna & 2a linha 3a coluna \\
+		3a linha 1a coluna & 3a linha 2a coluna & 3a linha 3a coluna \\ \hline
+	\end{tabular}
+	\caption{Tabela utilizando o comando multicolumn.}
+\end{table}
+
+
+\section{Figuras}
+
+Para inserir figuras deve-se colocar no preâmbulo o pacote graphicx e depois usar o comando
+que permite inserir figura.
+
+Por exemplo:
+ 
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width=4cm, height=6cm, angle=30, scale=0.5]{img/grafico1.jpg}
+    \caption{Título da figura.}
+    \label{fig:NomeDeReferenciaParaAFigura}
+  \end{figure}
+  
+\begin{verbatim}
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width=4cm, height=6cm, angle=30, scale=0.5]{img/grafico1.jpg}
+    \caption{Título da figura.}
+    \label{fig:NomeDeReferenciaParaAFigura}
+  \end{figure}
+\end{verbatim}
+
+No exemplo acima, o arquivo \emph{img/grafico1.jpg} deve estar na pasta \textbf{img} que deverá estar no mesmo diretório do texto. 
+
+Deve ser observado que nenhuma figura foi adicionada ao documento 
+para que este template fosse disponibilizado em arquivo único.

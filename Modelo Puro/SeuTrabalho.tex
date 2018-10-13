@@ -1,0 +1,87 @@
+\documentclass[	
+	12pt,					%				
+	openright,				%						
+	twoside,				%							
+	a4paper,				%						
+	chapter=TITLE,			%			
+	sumario = tradicional,	% 	
+	english,				%						
+	brazil					%							
+]{faeterj-rio-abntex2}		%
+
+
+% --------------------------------------------------------------------
+%
+%            			INICIO DO DOCUMENTO 
+%
+% --------------------------------------------------------------------
+
+\begin{document}
+	\selectlanguage{brazil}						%
+	\frenchspacing								%
+	\pretextual									%
+	\imprimircapa								%
+	\imprimirfolhaderosto*						%
+
+	% --------------------------------------------------------------------
+	% Insira abaixo os elementos prétextuais
+	% 	como: folha de aprovação, dedicatória, agradecimentos, epigrafe,
+	% 	resumo e listas de ilustrações, tabelas, siglas e simbolos.
+	% --------------------------------------------------------------------
+
+
+
+	% -----------------------------------------------
+	%          Sumário (Não Altere)
+	% -----------------------------------------------
+												%
+	\stepcounter{tocdepth}						%
+ 		\pdfbookmark[0]{\contentsname}{toc}		%
+ 		\tableofcontents*						%
+												%
+ 	\settocdepth{section}						%
+ 	\cleardoublepage							%
+	% ------------------------------------------------
+	%               Fim do Sumário
+	% ------------------------------------------------
+
+	\textual									%
+	% --------------------------------------------------------------------
+	% Insira abaixo os capitulos da sua parte textual 
+	% como: Introdução e os capitulos referentes ao desenvolvimento do trabalho
+	% --------------------------------------------------------------------
+
+
+
+
+
+	\phantompart								%
+	% --------------------------------------------------------------------
+	% Insira abaixo o capitulo de Conclusão do Trabalho
+	%
+	% --------------------------------------------------------------------
+
+
+
+
+ 	\postextual									%
+ 	% --------------------------------------------------------------------
+ 	% Insira abaixo os capitulos póstextuais do seu trabalho
+ 	% como: bibliografia, apêndices e anexos
+ 	% --------------------------------------------------------------------
+ 
+ 	% para inserir bibtex -> \bibliography{localdoarquivo/nomedoarquivo} (não coloque extenssão)
+ 
+
+
+
+ 	\phantompart								%
+	\printindex									%
+ 	
+\end{document}
+
+% --------------------------------------------------------------------
+%
+%							FIM DO DOCUMENTO
+%
+% --------------------------------------------------------------------

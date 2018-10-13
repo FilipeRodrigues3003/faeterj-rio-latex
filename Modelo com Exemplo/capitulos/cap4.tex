@@ -1,0 +1,77 @@
+\chapter{O Quarto Capitulo}
+% ---
+
+
+\section{Referências}
+
+Exemplos:
+
+Exemplo de referência simples \cite{ctan}.
+
+Exemplo de referência dupla \cite{ctan} e \cite{signal}.
+
+Exemplo de referência múltipla ($> 2$) \cite{signal}.
+
+\section{Equações}
+
+Existem diversas formas de incluir equações em um documento elaborado em \LaTeX.
+Deve-se notar que elas podem ser inseridas no meio do texto como em destaque.
+
+No meio do texto: A equação $a^{2}=b^{2}+c^{2}$ representa...
+
+Em destaque: \[ a^{2}=b^{2}+c^{2} \]
+
+É possível escrever equações que envolvam símbolos utilizados em Cálculo.
+A seguir, serão apresentados alguns exemplos.
+
+Série de Fourier na forma complexa:
+
+\begin{equation}
+	f(t) = \sum_{n=-\infty}^{\infty} c_{n} \; e^{\frac{i \pi n t}{L}}
+\end{equation}
+
+onde:
+
+\begin{equation}
+	c_{n} = \frac{1}{2L} \int_{c}^{c+2L} f(t) \, c_{n} \; e^{-\frac{i \pi n t}{L}} \; dt
+\end{equation}
+
+\vspace{5mm}
+
+Equações de Maxwell para campos variantes no tempo:
+
+Na forma integral:
+
+\begin{equation}
+	\oint \vec{H} \cdot d\vec{L} = \int \Bigg( \vec{J}+\frac{\partial \vec{D}}{\partial t} \Bigg) d\vec{S} 
+\end{equation}
+
+\begin{equation}
+	\oint \vec{E} \cdot d\vec{L} = - \int \frac{\partial \vec{B}}{\partial t} \; d\vec{S} 
+\end{equation}
+
+\begin{equation}
+	\int_{S} \vec{D} \cdot d\vec{S} = \int_{V} \rho \; d\vec{V}
+\end{equation}
+
+\begin{equation}
+	\int_{S} \vec{B} \cdot d\vec{S} = 0
+\end{equation}
+
+Na forma diferencial:
+
+\begin{equation}
+	\nabla \times \vec{H} = \vec{J}+\frac{\partial \vec{D}}{\partial t}
+\end{equation}
+
+\begin{equation}
+	\nabla \times \vec{E} = - \frac{\partial \vec{B}}{\partial t}
+\end{equation}
+
+\begin{equation}
+	\nabla \cdot \vec{D} = \rho
+\end{equation}
+
+\begin{equation}
+	\nabla \cdot \vec{B} = 0
+\end{equation}
