@@ -1,14 +1,14 @@
 \documentclass[	
-	12pt,					%				
-	openright,				%						
-	twoside,				%							
-	a4paper,				%						
-	chapter=TITLE,			%			
-	sumario = tradicional,	% 	
-	english,				%						
-	brazil					%							
-]{faeterj-rio-abntex2}		%
-
+	12pt,									
+	openany,               						
+	oneside,			
+	a4paper,
+	abnt,						
+	chapter=TITLE,						
+	sumario=abnt-6027-2012,	 	
+	english,										
+	brazil												
+]{faeterj-rio-abntex2}		
 
 % --------------------------------------------------------------------
 %
@@ -17,11 +17,12 @@
 % --------------------------------------------------------------------
 
 \begin{document}
-	\selectlanguage{brazil}						%
-	\frenchspacing								%
-	\pretextual									%
-	\imprimircapa								%
-	\imprimirfolhaderosto*						%
+    	\pagestyle{empty}
+	\selectlanguage{brazil}						
+	\frenchspacing								
+	\pretextual									
+	\imprimircapa								
+	\imprimirfolhaderosto*						
 
 	% --------------------------------------------------------------------
 	% Insira abaixo os elementos prétextuais
@@ -34,18 +35,24 @@
 	% -----------------------------------------------
 	%          Sumário (Não Altere)
 	% -----------------------------------------------
-												%
-	\stepcounter{tocdepth}						%
- 		\pdfbookmark[0]{\contentsname}{toc}		%
- 		\tableofcontents*						%
-												%
- 	\settocdepth{section}						%
- 	\cleardoublepage							%
+	\pagestyle{simple}
+	\stepcounter{tocdepth}	
+	\pdfbookmark[0]{\listfigurename}{lof}
+        \listoffigures*
+        \cleardoublepage
+        \pdfbookmark[0]{\listtablename}{lot}
+        \listoftables*
+        \cleardoublepage
+ 	\pdfbookmark[0]{\contentsname}{toc}
+        \tableofcontents*
+        \cleardoublepage	
+ 	% \settocdepth{section}		
+ 	\cleardoublepage	
 	% ------------------------------------------------
 	%               Fim do Sumário
 	% ------------------------------------------------
 
-	\textual									%
+	\textual
 	% --------------------------------------------------------------------
 	% Insira abaixo os capitulos da sua parte textual 
 	% como: Introdução e os capitulos referentes ao desenvolvimento do trabalho
@@ -55,7 +62,7 @@
 
 
 
-	\phantompart								%
+	\phantompart
 	% --------------------------------------------------------------------
 	% Insira abaixo o capitulo de Conclusão do Trabalho
 	%
@@ -64,7 +71,7 @@
 
 
 
- 	\postextual									%
+ 	\postextual
  	% --------------------------------------------------------------------
  	% Insira abaixo os capitulos póstextuais do seu trabalho
  	% como: bibliografia, apêndices e anexos
@@ -75,13 +82,13 @@
 
 
 
- 	\phantompart								%
-	\printindex									%
+ 	\phantompart								
+	\printindex			
  	
 \end{document}
 
 % --------------------------------------------------------------------
 %
-%							FIM DO DOCUMENTO
+%	FIM DO DOCUMENTO
 %
 % --------------------------------------------------------------------
